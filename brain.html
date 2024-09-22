@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>琪鉴文化</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            position: sticky;
+            top: 0;
+        }
+        .logo {
+            max-width: 100%;
+            height: auto;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+        nav ul li a:hover {
+            background-color: #ccc;
+        }
+        .content {
+            margin-top: 60px; /* 给内容部分留出导航栏的高度 */
+            padding: 20px;
+            background-image: url('背景.jpg'); /* 使用背景图片 */
+            background-repeat: no-repeat; /* 不重复背景图片 */
+            background-position: center; /* 居中显示背景图片 */
+            background-size: cover; /* 拉伸图片以覆盖整个容器 */
+            min-height: calc(100vh - 60px); /* 内容至少占满整个视口高度 */
+        }
+        .banner {
+            text-align: center; /* 居中对齐图片 */
+            margin-top: 20px; /* 和上面的元素之间留点空间 */
+        }
+        .banner img {
+            max-width: 100%; /* 图片宽度不超过其容器宽度 */
+            height: auto; /* 保持图片原始比例 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="琪鉴文化 Logo" width="200" height="100">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://qijian.netlify.app/">返回</a></li>
+                <!-- 可以根据需要添加更多的导航项 -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 新增部分 -->
+    <div class="banner">
+        <img src="心里咨询.jpg" alt="心里咨询">
+    </div>
+</body>
+</html>
